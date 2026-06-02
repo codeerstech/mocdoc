@@ -41,96 +41,98 @@ export const site = {
 }
 
 export const productNav: NavGroup = {
-  title: 'Products',
+  title: 'Services',
   items: [
     {
-      title: 'All Products',
-      description: 'Explore the full CareAxis product family in one place.',
-      to: '/products',
+      title: 'All Home Care Services',
+      description: 'Explore caregivers, nurses, attendants, therapy, elder care, baby care, and live-in staff.',
+      to: '/services',
     },
     {
-      title: 'Hospital Management Software',
-      description: 'Coordinate OP, IP, billing, pharmacy, diagnostics, and discharge workflows.',
-      to: '/hospital-management-system',
+      title: 'Elder Care Services',
+      description: 'Daily assistance, companionship, fall-risk support, hygiene, meals, and family updates.',
+      to: '/services/elder-care-assistance',
     },
     {
-      title: 'Laboratory Management Software',
-      description: 'Track samples, machines, reports, dispatch, and multi-location labs.',
-      to: '/lab-management-software',
+      title: 'Nursing Services at Home',
+      description: 'Qualified nurses for vitals, injections, wound care, catheter care, and post-discharge tasks.',
+      to: '/services/nursing-services-at-home',
     },
     {
-      title: 'Pharmacy Management Software',
-      description: 'Manage prescriptions, inventory, batch expiry, GST billing, and counters.',
-      to: '/pharmacy-management-software',
+      title: 'Patient Care Attendants',
+      description: 'Non-clinical attendants for bathing, feeding, bed care, mobility, and day-to-day supervision.',
+      to: '/services/patient-care-attendants',
     },
     {
-      title: 'Clinic/Polyclinic Management Software',
-      description: 'Run appointments, clinical notes, billing, memberships, and follow-ups.',
-      to: '/clinic-polyclinic-management-software',
+      title: 'Post-Hospital Recovery',
+      description: 'Care plans after surgery or discharge with nurses, attendants, therapy support, and monitoring.',
+      to: '/services/post-hospitalization-recovery',
     },
     {
-      title: 'Environmental Laboratory Software',
-      description: 'Organize collection, test methods, approvals, certificates, and audits.',
-      to: '/environmental-lims-software',
+      title: 'Physiotherapy at Home',
+      description: 'Therapy visits for rehab, mobility, pain management, stroke recovery, and strengthening.',
+      to: '/services/physiotherapy-at-home',
     },
     {
-      title: 'ART Management Software',
-      description: 'Support IVF, IUI, embryology, consent, cycle tracking, and counselling.',
-      to: '/ivf-hospital-management-information-system',
+      title: 'Mother and Newborn Care',
+      description: 'Baby care specialists for newborn routines, postnatal support, hygiene, feeding, and night care.',
+      to: '/services/mother-newborn-care',
     },
     {
-      title: 'Ophthalmology Management Software',
-      description: 'Connect optical, procedures, prescriptions, imaging, and vision records.',
-      to: '/best-eye-hospital-management-software',
+      title: 'Companion and Caretaker Services',
+      description: 'Emotional support, reminders, light assistance, supervision, and daily routine companionship.',
+      to: '/services/companion-caretaker-services',
     },
     {
-      title: 'Dental Management Software',
-      description: 'Plan chairs, treatments, charts, labs, recalls, and multi-branch dental care.',
-      to: '/dental-practice-management-software',
+      title: 'Live-in Home Healthcare Staff',
+      description: 'Long-duration caregivers and support staff with continuity reviews and replacement coverage.',
+      to: '/services/live-in-home-healthcare-staff',
     },
   ],
 }
 
 export const integrationNav: NavGroup = {
-  title: 'Integrations',
+  title: 'Trust & Safety',
   items: [
-    { title: 'Aasandha', to: '/aasandha-integrated-hms' },
-    { title: 'ABDM', to: '/abdm-compliant-software' },
-    { title: 'CDSS', to: '/clinical-decision-support-system' },
-    { title: 'External Integration', to: '/external-integration-healthcare-systems' },
-    { title: 'Machine Integration', to: '/lims-machine-interface-integration-system' },
-    { title: 'NPHIES Integration', to: '/nphies-integration' },
-    { title: 'POS Integration', to: '/pos-integration-hospital-clinic-software' },
-    { title: 'VMS Integration', to: '/vms-integration' },
+    { title: 'Verification Process', to: '/trust-safety/verification-process' },
+    { title: 'Background Checks', to: '/trust-safety/background-checks' },
+    { title: 'Training Standards', to: '/trust-safety/training-standards' },
+    { title: 'Privacy Assurance', to: '/trust-safety/privacy-assurance' },
+    { title: 'Emergency Support', to: '/trust-safety/emergency-support' },
+    { title: 'Replacement Policy', to: '/trust-safety/replacement-policy' },
   ],
 }
 
 export const resourceNav: NavGroup = {
-  title: 'Resources',
+  title: 'Care Plans',
   items: [
-    { title: 'Blogs', to: '/blog' },
-    { title: 'Brochure', to: '/hospital-management-software-brochure' },
-    { title: 'NABH HIS & EMR', to: '/nabh-compliant-hospital-software-india' },
-    { title: 'PMJAY', to: '/pmjay-integrated-hospital-software' },
+    { title: 'Hourly Care', to: '/care-plans/hourly-care' },
+    { title: 'Daily Shifts', to: '/care-plans/daily-shifts' },
+    { title: 'Weekly Plans', to: '/care-plans/weekly-plans' },
+    { title: 'Monthly Care', to: '/care-plans/monthly-care' },
+    { title: 'Live-in Care', to: '/care-plans/live-in-care' },
   ],
 }
 
 export const companyNav: NavGroup = {
-  title: 'Company',
+  title: 'Coverage',
   items: [
-    { title: 'About Us', to: '/best-healthcare-software-development-company' },
-    { title: 'Careers', to: '/career-healthcare-information-management' },
-    { title: 'Contact Us', to: '/contact-us' },
-    { title: 'Partner With Us', to: '/partner-best-healthcare-solutions-provider' },
+    { title: 'Chennai', to: '/coverage/chennai' },
+    { title: 'Bengaluru', to: '/coverage/bengaluru' },
+    { title: 'Hyderabad', to: '/coverage/hyderabad' },
+    { title: 'Mumbai', to: '/coverage/mumbai' },
+    { title: 'Pune', to: '/coverage/pune' },
+    { title: 'Delhi NCR', to: '/coverage/delhi-ncr' },
   ],
 }
 
 export const customerNav: NavGroup = {
-  title: 'Customer',
+  title: 'Families',
   items: [
-    { title: 'Wall of Love', to: '/customers-review' },
-    { title: 'Success Stories', to: '/success-stories' },
-    { title: 'Referral Program', to: '/referral-program-healthcare-professionals' },
+    { title: 'Testimonials', to: '/families/testimonials' },
+    { title: 'Success Stories', to: '/families/success-stories' },
+    { title: 'FAQ', to: '/families/faq' },
+    { title: 'Request Caregiver', to: '/families/request-caregiver' },
   ],
 }
 

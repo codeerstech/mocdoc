@@ -2,34 +2,34 @@ import type { TemplateAction } from '../data/types'
 
 export const templateActions = {
   demo: {
-    label: 'Book a Demo',
-    to: '/book-demo-healthcare-management-software',
+    label: 'Request Caregiver',
+    to: '/families/request-caregiver',
     kind: 'primary',
   },
   contact: {
-    label: 'Contact Us',
-    to: '/contact-us',
+    label: 'Book Consultation',
+    to: '/families/request-caregiver',
     kind: 'secondary',
   },
   brochure: {
-    label: 'Download Brochure',
-    to: '/hospital-management-software-brochure',
+    label: 'View Care Packages',
+    to: '/care-plans/monthly-care',
     kind: 'secondary',
   },
   login: {
-    label: 'User Login',
-    to: '/login',
+    label: 'Family Portal',
+    to: '/families/request-caregiver',
     kind: 'utility',
-    ariaLabel: 'User login',
+    ariaLabel: 'Family portal',
   },
   patient: {
-    label: 'Patient Login',
-    to: '/patient-login',
+    label: 'For Families',
+    to: '/services',
     kind: 'utility',
   },
   signup: {
-    label: 'Sign Up',
-    to: '/signup',
+    label: 'For Providers',
+    to: '/trust-safety/verification-process',
     kind: 'utility',
   },
   forgotPassword: {

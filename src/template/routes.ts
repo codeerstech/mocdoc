@@ -3,6 +3,7 @@ import { allMarketingPages, blogPosts } from './pages'
 import { blogIndexCopy } from './pageCopy'
 import { site } from './content'
 import { authPages } from './auth'
+import { routeMeta as careRouteMeta } from './careServices'
 
 export const locationPrefixes = [
   '/india/',
@@ -62,6 +63,12 @@ export const routeManifest: RouteMeta[] = [
     pageType: 'resource',
     category: 'Products',
   },
+  ...careRouteMeta
+    .filter((route) => route.path !== '/')
+    .map((route) => ({
+      ...route,
+      sourceUrl: `https://mocdoc.com${route.path}`,
+    })),
   ...authPages.map((page) => ({
     path: page.path,
     title: page.title,

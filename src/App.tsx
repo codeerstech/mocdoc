@@ -7,6 +7,7 @@ import { getGenericFeaturePage, getGenericLocationPage, marketingPageByPath } fr
 import { routeMetaByPath } from './data/routes'
 import { AuthPage } from './pages/AuthPage'
 import { BlogDetail, BlogIndex } from './pages/BlogPages'
+import { CareSeoPageRoute, CareServiceDetailPage } from './pages/HomeCarePage'
 import { HomePage } from './pages/HomePage'
 import { LocationPage } from './pages/LocationPage'
 import { MarketingPage } from './pages/MarketingPage'
@@ -15,6 +16,7 @@ import { ProductIndexPage } from './pages/ProductIndexPage'
 import { SitemapPage } from './pages/SitemapPage'
 import { TemplateProvider } from './template/TemplateProvider'
 import { authPages } from './template/auth'
+import { seoPages } from './template/careServices'
 import { locationPrefixes, featureRouteHints } from './template/routes'
 import { site } from './template/content'
 
@@ -80,6 +82,10 @@ function AppRoutes() {
             {authPages.map((page) => (
               <Route key={page.path} path={page.path} element={<AuthPage page={page} />} />
             ))}
+            {seoPages.map((page) => (
+              <Route key={page.path} path={page.path} element={<CareSeoPageRoute />} />
+            ))}
+            <Route path="/services/:slug" element={<CareServiceDetailPage />} />
             {staticPaths.map((path) => (
               <Route key={path} path={path} element={<StaticMarketingRoute />} />
             ))}
