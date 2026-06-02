@@ -1,0 +1,90 @@
+import type { MotionPreset, ThemeTokens } from '../data/types'
+
+export const theme: ThemeTokens = {
+  colors: {
+    text: '#4b5563',
+    background: '#ffffff',
+    backgroundSoft: '#f2f8ff',
+    backgroundCool: '#eef7fb',
+    surface: '#ffffff',
+    surfaceStrong: '#f8fbff',
+    muted: '#6b7280',
+    heading: '#102033',
+    line: '#dce8f3',
+    accent: '#176bff',
+    accentStrong: '#0f5bd8',
+    accentDark: '#073b8f',
+    blue: '#2f8fff',
+    green: '#14a970',
+    rose: '#d84d7d',
+    headerBorder: 'rgba(23, 107, 255, 0.14)',
+    headerBackground: 'rgba(255, 255, 255, 0.96)',
+    topStripText: '#075985',
+    topStripBackground: '#e8f6ff',
+    brandMarkBackground: '#e8f2ff',
+    brandMarkBorder: '#bdd7ff',
+    white: '#ffffff',
+    navText: '#253247',
+    menuHoverBackground: '#eef6ff',
+    panelBorder: '#dce8f3',
+    panelBackground: '#ffffff',
+    menuItemBorder: '#bdd7ff',
+    menuItemBackground: '#f3f9ff',
+    iconButtonBorder: '#dce8f3',
+    ghostBorder: '#a9caff',
+    heroGradientStart: '#edf7ff',
+    heroGradientEnd: '#ffffff',
+    pillBorder: '#bedcff',
+    visualBorder: '#cfe2f6',
+    visualBarBackground: '#eff7ff',
+    visualDotOrange: '#45c0a4',
+    visualDotGreen: '#7bd88f',
+    visualDotBlue: '#65a9ff',
+    visualSideBorder: '#d7e7f6',
+    visualSidebarText: '#667085',
+    visualActiveBackground: '#e8f2ff',
+    chartBackground: '#eef7fb',
+    chartBorder: '#d5e9f3',
+    visualCardBorder: '#bdd7ff',
+    logoText: '#5f6672',
+    ratingText: '#0f766e',
+    ratingBackground: '#e9fbf6',
+    ctaBackground: '#073b8f',
+    ctaPillText: '#e8f2ff',
+    ctaPillBorder: 'rgba(255, 255, 255, 0.28)',
+    ctaPillBackground: 'rgba(255, 255, 255, 0.12)',
+    error: '#b42318',
+    noticeText: '#075985',
+    inputBorder: '#cfe2f6',
+    footerDivider: '#e1edf7',
+    whatsapp: '#26b55f',
+  },
+  shadows: {
+    sm: '0 8px 24px rgba(15, 64, 120, 0.08)',
+    md: '0 18px 54px rgba(13, 74, 138, 0.14)',
+    button: '0 12px 26px rgba(23, 107, 255, 0.24)',
+  },
+  radii: {
+    sm: '7px',
+    md: '8px',
+    pill: '999px',
+  },
+  gradients: {
+    hero: 'linear-gradient(180deg, var(--color-hero-gradient-start) 0%, var(--color-background-cool) 42%, var(--color-hero-gradient-end) 82%)',
+  },
+  font: {
+    sans:
+      'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+  },
+}
+
+export const motionPreset: MotionPreset = {
+  duration: 0.45,
+  ease: [0.22, 1, 0.36, 1],
+  distance: 22,
+  stagger: 0.08,
+}
+
+export function toCssVarName(key: string, prefix: string) {
+  return `--${prefix}-${key.replace(/[A-Z]/g, (match) => `-${match.toLowerCase()}`)}`
+}
