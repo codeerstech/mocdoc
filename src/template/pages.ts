@@ -380,6 +380,27 @@ const featurePages: MarketingPageContent[] = [
 
 const companyPages: MarketingPageContent[] = [
   {
+    path: '/about-us',
+    pageType: 'company',
+    category: 'Company',
+    eyebrow: 'About Us',
+    title: `${site.brand.name} brings practical healthcare operations into one connected platform`,
+    description:
+      'A dedicated about page for the healthcare brand, ready to adapt with company story, implementation standards, support model, and proof points.',
+    sourceUrl: 'https://mocdoc.com/about-us',
+    visual: 'people',
+    primaryCta: demoCta,
+    secondaryCta: contactCta,
+    heroStats: sharedStats,
+    features: platformFeatures,
+    operationsTitle: 'How we work',
+    operationsIntro: 'The about page frames the company story around clinical clarity, rollout support, workflow quality, and measurable outcomes.',
+    operations: operationalFeatures,
+    outcomesTitle: 'Healthcare standards',
+    outcomes: outcomeStats,
+    faqs: standardFaqs,
+  },
+  {
     path: '/best-healthcare-software-development-company',
     pageType: 'company',
     category: 'Company',

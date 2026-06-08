@@ -238,8 +238,9 @@ export function Footer() {
       <div className="footer-bottom">
         <span>{site.footerCopyright}</span>
         <div>
+          <Link to="/about-us">About Us</Link>
           <Link to="/trust-safety/verification-process">Verification</Link>
-          <Link to="/trust-safety/privacy-assurance">Privacy & Support</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
           <Link to="/families/faq">FAQ</Link>
         </div>
       </div>
